@@ -8,7 +8,7 @@
 ; perimeter_speed = 30
 ; infill_speed = 60
 ; travel_speed = 130
-; nozzle_diameter = 0.5
+; nozzle_diameter = 0.3
 ; filament_diameter = 3
 ; extrusion_multiplier = 1
 ; perimeters extrusion width = 0.50mm
@@ -23,7 +23,7 @@ M104 S200 ; set temperature
 G28 ; home all axes
 G1 Z5 F5000 ; lift nozzle
 
-M109 S200 ; wait for temperature to be reached
+M109 S230 ; wait for temperature to be reached
 G90 ; use absolute coordinates
 G92 E0
 M82 ; use absolute distances for extrusion
